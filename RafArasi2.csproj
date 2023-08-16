@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BB8D25E2-9DC1-4B7A-91D2-04085B984089}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RafArasi2</RootNamespace>
+    <AssemblyName>RafArasi2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder, Version=1.4.3.0, Culture=neutral, PublicKeyToken=c4ed5b9ae8358a28, processorArchitecture=MSIL">
+      <HintPath>packages\QRCoder.1.4.3\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="zxing, Version=0.16.9.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>packages\ZXing.Net.0.16.9\lib\net45\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.9.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>packages\ZXing.Net.0.16.9\lib\net45\zxing.presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminAna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAna.Designer.cs">
+      <DependentUpon>AdminAna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMüsteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMüsteri.Designer.cs">
+      <DependentUpon>AdminMüsteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.cs" />
+    <Compile Include="KasiyerAna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KasiyerAna.Designer.cs">
+      <DependentUpon>KasiyerAna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KasiyerEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KasiyerEkle.Designer.cs">
+      <DependentUpon>KasiyerEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kitap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kitap.Designer.cs">
+      <DependentUpon>Kitap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masa.Designer.cs">
+      <DependentUpon>Masa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SmsApiService.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminAna.resx">
+      <DependentUpon>AdminAna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMüsteri.resx">
+      <DependentUpon>AdminMüsteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KasiyerAna.agq.resx">
+      <DependentUpon>KasiyerAna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KasiyerAna.resx">
+      <DependentUpon>KasiyerAna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KasiyerEkle.resx">
+      <DependentUpon>KasiyerEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kitap.resx">
+      <DependentUpon>Kitap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masa.resx">
+      <DependentUpon>Masa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\AdminAna.datasource" />
+    <None Include="Properties\DataSources\Form1.datasource" />
+    <None Include="Properties\DataSources\KasiyerAna.datasource" />
+    <None Include="Properties\DataSources\KasiyerEkle.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\QRCoder.AbstractQRCode.datasource" />
+    <None Include="Properties\DataSources\QRCoder.ArtQRCode+BackgroundImageStyle.datasource" />
+    <None Include="Properties\DataSources\QRCoder.ArtQRCode+QuietZoneStyle.datasource" />
+    <None Include="Properties\DataSources\QRCoder.ArtQRCode.datasource" />
+    <None Include="Properties\DataSources\QRCoder.ArtQRCodeHelper.datasource" />
+    <None Include="Properties\DataSources\QRCoder.AsciiQRCode.datasource" />
+    <None Include="Properties\DataSources\QRCoder.AsciiQRCodeHelper.datasource" />
+    <None Include="Properties\DataSources\QRCoder.Base64QRCode+ImageType.datasource" />
+    <None Include="Properties\DataSources\QRCoder.Base64QRCode.datasource" />
+    <None Include="Properties\DataSources\QRCoder.Base64QRCodeHelper.datasource" />
+    <None Include="Properties\DataSources\QRCoder.BitmapByteQRCode.datasource" />
+    <None Include="Properties\DataSources\QRCoder.BitmapByteQRCodeHelper.datasource" />
+    <None Include="Properties\DataSources\QRCoder.Exceptions.DataTooLongException.datasource" />
+    <None Include="Properties\DataSources\QRCoder.Extensions.CustomExtensions.datasource" />
+    <None Include="Properties\DataSources\QRCoder.Extensions.StringValueAttribute.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+BezahlCode+AuthorityType.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+BezahlCode+BezahlCodeException.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+BezahlCode+Currency.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+BezahlCode.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+BitcoinAddress.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+BitcoinCashAddress.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+BitcoinLikeCryptoCurrencyAddress+BitcoinLikeCryptoCurrencyType.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+BitcoinLikeCryptoCurrencyAddress.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+Bookmark.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+CalendarEvent+EventEncoding.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+CalendarEvent.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+ContactData+AddressOrder.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+ContactData+ContactOutputType.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+ContactData.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+Geolocation+GeolocationEncoding.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+Geolocation.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+Girocode+GirocodeEncoding.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+Girocode+GirocodeException.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+Girocode+GirocodeVersion.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+Girocode+TypeOfRemittance.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+Girocode.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+LitecoinAddress.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+Mail+MailEncoding.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+Mail.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+MMS+MMSEncoding.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+MMS.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+MoneroTransaction+MoneroTransactionException.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+MoneroTransaction.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+OneTimePassword+OneTimePasswordAuthAlgorithm.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+OneTimePassword+OneTimePasswordAuthType.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+OneTimePassword+OoneTimePasswordAuthAlgorithm.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+OneTimePassword.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+Payload.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+PhoneNumber.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+RussiaPaymentOrder+CharacterSets.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+RussiaPaymentOrder+OptionalFields.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+RussiaPaymentOrder+RussiaPaymentOrderException.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+RussiaPaymentOrder+TechCode.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+RussiaPaymentOrder.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+ShadowSocksConfig+Method.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+ShadowSocksConfig+ShadowSocksConfigException.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+ShadowSocksConfig.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+SkypeCall.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+SlovenianUpnQr.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+SMS+SMSEncoding.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+SMS.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+SwissQrCode+AdditionalInformation+SwissQrCodeAdditionalInformationException.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+SwissQrCode+AdditionalInformation.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+SwissQrCode+Contact+AddressType.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+SwissQrCode+Contact+SwissQrCodeContactException.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+SwissQrCode+Contact.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+SwissQrCode+Currency.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+SwissQrCode+Iban+IbanType.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+SwissQrCode+Iban+SwissQrCodeIbanException.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+SwissQrCode+Iban.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+SwissQrCode+Reference+ReferenceTextType.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+SwissQrCode+Reference+ReferenceType.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+SwissQrCode+Reference+SwissQrCodeReferenceException.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+SwissQrCode+Reference.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+SwissQrCode+SwissQrCodeException.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+SwissQrCode.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+Url.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+WhatsAppMessage.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+WiFi+Authentication.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator+WiFi.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PayloadGenerator.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PdfByteQRCode.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PdfByteQRCodeHelper.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PngByteQRCode.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PngByteQRCodeHelper.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PostscriptQRCode.datasource" />
+    <None Include="Properties\DataSources\QRCoder.PostscriptQRCodeHelper.datasource" />
+    <None Include="Properties\DataSources\QRCoder.QRCode.datasource" />
+    <None Include="Properties\DataSources\QRCoder.QRCodeData+Compression.datasource" />
+    <None Include="Properties\DataSources\QRCoder.QRCodeData.datasource" />
+    <None Include="Properties\DataSources\QRCoder.QRCodeGenerator+ECCLevel.datasource" />
+    <None Include="Properties\DataSources\QRCoder.QRCodeGenerator+EciMode.datasource" />
+    <None Include="Properties\DataSources\QRCoder.QRCodeGenerator.datasource" />
+    <None Include="Properties\DataSources\QRCoder.QRCodeHelper.datasource" />
+    <None Include="Properties\DataSources\QRCoder.SvgQRCode+SizingMode.datasource" />
+    <None Include="Properties\DataSources\QRCoder.SvgQRCode+SvgLogo+MediaType.datasource" />
+    <None Include="Properties\DataSources\QRCoder.SvgQRCode+SvgLogo.datasource" />
+    <None Include="Properties\DataSources\QRCoder.SvgQRCode.datasource" />
+    <None Include="Properties\DataSources\QRCoder.SvgQRCodeHelper.datasource" />
+    <None Include="Properties\DataSources\RafArasi2.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\RafArasi2.Properties.Settings.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rafarasıpng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cam-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir__1_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy %282%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy %283%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forgot-password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy %28412.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33027.164
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RafArasi2", "RafArasi2.csproj", "{BB8D25E2-9DC1-4B7A-91D2-04085B984089}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Default = Debug|Default
+		Release|Any CPU = Release|Any CPU
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB8D25E2-9DC1-4B7A-91D2-04085B984089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB8D25E2-9DC1-4B7A-91D2-04085B984089}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB8D25E2-9DC1-4B7A-91D2-04085B984089}.Debug|Default.ActiveCfg = Debug|Any CPU
+		{BB8D25E2-9DC1-4B7A-91D2-04085B984089}.Debug|Default.Build.0 = Debug|Any CPU
+		{BB8D25E2-9DC1-4B7A-91D2-04085B984089}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB8D25E2-9DC1-4B7A-91D2-04085B984089}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB8D25E2-9DC1-4B7A-91D2-04085B984089}.Release|Default.ActiveCfg = Release|Any CPU
+		{BB8D25E2-9DC1-4B7A-91D2-04085B984089}.Release|Default.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E546E7E5-93D3-4F0F-81C3-E7A76A9D43C6}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Default = Debug|Default
+		Release|Any CPU = Release|Any CPU
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Default = Debug|Default
+		Release|Any CPU = Release|Any CPU
+		Release|Default = Release|Default
+	EndGlobalSection
+EndGlobal
